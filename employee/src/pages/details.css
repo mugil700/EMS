@@ -1,0 +1,117 @@
+/* General Styling */
+.details-container {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+  }
+  
+  .details-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input:focus {
+    border: 2px solid #ff7e5f;
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.5);
+  }
+  
+  /* User Card Styling */
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .user-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-name {
+    margin-bottom: 15px;
+    color: #ff7e5f;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .user-card p {
+    margin: 5px 0;
+  }
+  
+  /* Form Styling for Edit User */
+  .edit-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .edit-container button {
+    padding: 10px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .edit-container button:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    .search-input {
+      width: 100%;
+    }
+  
+    .user-card {
+      width: 100%;
+    }
+  }
+  
